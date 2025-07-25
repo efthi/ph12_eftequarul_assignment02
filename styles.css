@@ -54,6 +54,12 @@ Author: Efthaqur Alam
     color: #E95A08;
 }
 /*=========================================*/
+/*Resposive*/
+@media screen {
+    
+}
+
+/*========================================== */
 /* Header Section CSS */
 .header{
     margin:0 auto;
@@ -168,22 +174,41 @@ Author: Efthaqur Alam
     max-width: 1140px;
     margin:200px auto;
     display: flex;
-    flex-wrap: wrap;
+    position: relative;
 }
 .cert-img{
-    width:50%;
+    width:100%;
+    
 }
 .cert-trust-logo{
-    position:relative;
-    height: 40%;
+    position:absolute;
     width: 30%;
-    top: -150px;
-    left: -180px;
+    height: 30%;
+    top: -10%;
+    left: 30%;
+    
 }
 
 .cert-des{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
+
+.cert-des-header {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-left: 40px;
+
+}
+
+.cert-des-text{
+    color: grey;
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
 
 /*Deal section*/
 .deals{
