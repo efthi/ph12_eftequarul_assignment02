@@ -221,8 +221,12 @@ Author: Efthaqur Alam
 
 /*Footer Section */
 .newsletter{
+    background-image: url(./assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     max-width: 1440px;
-    margin:100px auto;
+    height: 70vh;
+    margin:0px auto;
 }
 
 .newsletter-img{
@@ -231,9 +235,30 @@ Author: Efthaqur Alam
 }
 
 .newsletter-text{
-    position: relative;
-    left: 50%;
-    top: -50%;
+  
+
+}
+
+.newsletter-heading{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding-top: 10%;
+}
+
+.newsletter-form{
+    text-align: center;
+    
+}
+.newsletter-input{
+    width: 40%;
+    height: 30px;
+}
+.btn{
+    background-color: #E95A08;
+    color: white;
+    height: 30px;
 
 }
 
