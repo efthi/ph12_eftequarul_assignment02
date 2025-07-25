@@ -77,5 +77,31 @@ Author: Efthaqur Alam
 }
 
 /* Hero */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 150px auto;
+}
+.hero-textbox {
+    display: block;
+    margin-top: auto;
+}
+.hero-header{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 4em;
+}
+.hero-text{
+    color: gray;
+    font-size: 1.38em;
+    
+}
+.hero-img{
 
+}
 
+/*Color Code*/
+.orange {
+    color: #E95A08;
+}
