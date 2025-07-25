@@ -2,12 +2,12 @@
 
 /*
 Author: Efthaqur Alam
-
 */
 
-
+/*=========================================*/
 /* Adding Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart_checkout');
 /*Roboto*/
 .roboto-font {
   font-family: "Roboto", sans-serif;
@@ -17,7 +17,14 @@ Author: Efthaqur Alam
   font-variation-settings:
     "wdth" 100;
 }
-
+.roboto-font-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 /*Noto Serif */
 .noto-serif-font {
   font-family: "Noto Serif", serif;
@@ -26,7 +33,6 @@ Author: Efthaqur Alam
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-
 /* Inter */
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -34,11 +40,42 @@ Author: Efthaqur Alam
   font-weight: 400;
   font-style: normal;
 }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 2
+}
 
+/*=========================================*/
+/* Header Section CSS */
+.header{
+    margin:0 auto;
+}
 
-/*Header Section CSS */
-
+/* Nav Section*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    max-height: 71px;
+    margin: 30px auto;
+}
 .logo {
 
 }
+
+.nav-links {
+    display: flex;
+}
+.nav-item {
+    margin-right: 30px;
+}
+.nav-link {
+
+}
+
+/* Hero */
+
 
