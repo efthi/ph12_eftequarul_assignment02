@@ -61,6 +61,11 @@ Author: Efthaqur Alam
 
 /*========================================== */
 /* Header Section CSS */
+
+body{
+    margin: 0 auto;
+}
+
 .header{
     margin:0 auto;
 }
@@ -277,14 +282,32 @@ Author: Efthaqur Alam
 
 /*Footer Section */
 .newsletter{
-    background-image: url(./assets/news-letter-bg.png);
+    background-image: linear-gradient(rgba(7,51,79, 0.4)),url(./assets/news-letter-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 1440px;
+    background-size: cover;
     height: 70vh;
     margin:0px auto;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
 
+ /*
+    
+    background-image: linear-gradient(rgba(7, 51, 79, 0.4)), url('../assets/news-letter-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: clamp(240px, 27vw, 533px);
+    margin: 0 auto;
+    margin-top: 120px;
+    flex-direction: column;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+*/
 .newsletter-img{
     width: 100%;
     
