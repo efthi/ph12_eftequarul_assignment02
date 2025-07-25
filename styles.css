@@ -5,6 +5,8 @@ Author: Efthaqur Alam
 */
 
 /*=========================================*/
+/*Adding Tailwindcss*/
+@import "tailwindcss";
 /* Adding Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart_checkout');
@@ -47,7 +49,10 @@ Author: Efthaqur Alam
   'GRAD' 200,
   'opsz' 2
 }
-
+/*Color Code*/
+.orange {
+    color: #E95A08;
+}
 /*=========================================*/
 /* Header Section CSS */
 .header{
@@ -58,6 +63,7 @@ Author: Efthaqur Alam
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1140px;
     max-height: 71px;
     margin: 30px auto;
@@ -68,13 +74,17 @@ Author: Efthaqur Alam
 
 .nav-links {
     display: flex;
+    list-style: none;
+    
 }
 .nav-item {
     margin-right: 30px;
+    
 }
 .nav-link {
-
+    text-decoration: none;
 }
+
 
 /* Hero */
 .hero{
@@ -90,18 +100,88 @@ Author: Efthaqur Alam
 .hero-header{
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 4em;
+    font-size: 4rem;
 }
 .hero-text{
     color: gray;
-    font-size: 1.38em;
+    font-size: 1.38rem;
     
 }
 .hero-img{
+    width: 100%;
+}
+
+
+/*Main Section*/
+.content{   
+    max-width: 1140px;
+    margin:0px auto;
 
 }
 
-/*Color Code*/
-.orange {
-    color: #E95A08;
+/*Product Section */
+.products-card-heading {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
 }
+
+.products-card-des{
+        color: gray;
+        font-size: 1.38rem;
+        text-align: center;
+        padding: 0px 120px 0px 120px;
+}
+
+.products-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.product-title{
+    text-align: center;
+}
+
+.product-price{
+    text-align: center;
+    font-weight: bold;
+}
+
+.addtocart{
+    background-color: #E95A08;
+    width: 100%;
+    padding:10px 10px 10px 10px;
+    color: antiquewhite;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3%;
+}
+/* Cert Section*/
+.cert {
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+/*Deal section*/
+.deals{
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+/*Footer Section */
+.newsletter{
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+
+
+
+
