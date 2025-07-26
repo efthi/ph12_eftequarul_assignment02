@@ -396,6 +396,14 @@ body{
         
     }
 
+    .products-card-des{
+        color: gray;
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        font-weight: 400;
+    }
+
     .products-card{
     display: grid;
     grid-template-columns: repeat(2,1fr);
