@@ -53,11 +53,7 @@ Author: Efthaqur Alam
 .orange {
     color: #E95A08;
 }
-/*=========================================*/
-/*Resposive*/
-@media screen {
-    
-}
+
 
 /*========================================== */
 /* Header Section CSS */
@@ -371,4 +367,8 @@ body{
 }
 
 
-
+/*=========================================*/
+/*Resposive Small Device*/
+@media screen and (max-width:576.9px) {
+    
+}
