@@ -221,7 +221,8 @@ body{
 
 /*Deal section*/
 .deals{
-    max-width: 1140px;
+    
+    max-width: ;
     margin:0 auto;
 }
 .deals-header{
@@ -235,54 +236,59 @@ body{
    
 } */
 .deal-offer{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 10px;
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 50vh;
 }
-.offer-box1{
+
+
+.offer-1, .offer-2, .offer-3{
     display: flex;
+    /* border: 5px aquamarine dashed; */
     flex-direction: column;
-    gap: 10px;
-    position: relative;  
-}
-
-.offer-box1-text{
-    position: relative;
-    bottom: 25%;
-    left: 25%;
-    color: antiquewhite;  
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.offer-img {
-    width: 100%;
-    border-radius: 5%;
-    filter: brightness(50%);
+    border-radius: 20px;
+    
 }
     
-/* .offer-box2{
-    background-image: url(./assets/deal-zabo.png);
+.offer-1{
+    background-image: linear-gradient(rgba(7,51,79, 0.4)), url(./assets/deal-bloom.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-    margin:0px auto;
-
-} */
-  
-.offer-box2-text {
-    position: relative;
-    top: -50%;
-    left: 0%;
-    color: antiquewhite;  
-    font-weight: 600;
-    font-size: 1.25rem;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
+.offer-2 {
+    background-image: linear-gradient(rgba(7,51,79, 0.4)), url(./assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: span 2;
+    justify-content: center;
+    align-items: center;
+  }
 
-.deals-link{
-    text-decoration: none;
-    color: antiquewhite;
-}
+  .offer-3 {
+    background-image: linear-gradient(rgba(7,51,79, 0.4)), url(./assets/deal-ana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .offer-1 p, .offer-2 p, .offer-3 p{
+    color: rgb(238, 234, 234);
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .offer-1 p>a, .offer-2 p>a, .offer-3 p>a{
+    color: rgb(238, 234, 234);
+    font-size: 1em;
+    font-weight: bold;
+  }
+
 
 /*Footer Section */
 .newsletter{
@@ -399,5 +405,9 @@ body{
     .cert-des-text{
        text-align: left;
     }
+
+    .deal-offer{
+        grid-template-columns: 1fr;
+}
 
 }
