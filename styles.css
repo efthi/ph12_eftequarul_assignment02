@@ -292,11 +292,11 @@ body{
 
 /*Footer Section */
 .newsletter{
-    background-image: linear-gradient(rgba(7,51,79, 0.4)),url(./assets/news-letter-bg.png);
+    background-image: url(./assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
-    margin:0px auto;
+    margin:120px auto;
     display: flex;
     gap: 25px;
     flex-direction: column;
@@ -329,12 +329,12 @@ body{
 }
 .newsletter-input{
     width: 40%;
-    height: 30px;
+    height: 50px;
 }
 .btn{
     background-color: #E95A08;
     color: white;
-    height: 30px;
+    height: 50px;
 
 }
 
@@ -409,5 +409,24 @@ body{
     .deal-offer{
         grid-template-columns: 1fr;
 }
+    .footer-items{
+        flex-direction: column;
+    }    
+    .footer-logo{
+        width: 100%;
+    }
+    .foot-note {
+        display: block;
+        font-weight: 400;
+        padding-left: 10px;
+    }
 
+    .footer-links a{
+        margin-left:0px;
+    }
+
+    .footer-icons a{
+        padding: 10px;
+        
+    }
 }
