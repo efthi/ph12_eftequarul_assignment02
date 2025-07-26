@@ -191,11 +191,18 @@ body{
 }
 .cert-trust-logo{
     position:absolute;
-    width: 20%;
-    height: 30%;
+    width: 200px;
+    height: 200px;
     top: -10%;
-    left: 30%;
+    left: 35%;
+    animation: spin 3s linear infinite;
+
     
+}
+
+@keyframes spin {
+    from { transform:rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
 
 .cert-des{
