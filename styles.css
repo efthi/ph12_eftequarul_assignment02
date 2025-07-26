@@ -370,5 +370,21 @@ body{
 /*=========================================*/
 /*Resposive Small Device*/
 @media screen and (max-width:576.9px) {
-    
+    .nav-links li:nth-child(-n+3) {
+    display: none;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    .hero-header{
+    text-align: left;
+    font-size: 3rem;
+    }
+    .hero-text{
+        text-align: justify;
+        padding: 10px 10px 10px 10px;
+        
+    }
 }
